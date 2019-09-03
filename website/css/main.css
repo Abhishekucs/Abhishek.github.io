@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #202020;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'MADE Soulmaze';
+  src: url("/fonts/MADESoulmaze.woff") format("woff"), url("/fonts/MADESoulmaze.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.frame {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  background: #E56262;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.frame .center {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.frame .center .dot-1 {
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+  background: white;
+  margin-top: -10px;
+  margin-left: -10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: jump-jump-1 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: jump-jump-1 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+.frame .center .dot-2 {
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  background: white;
+  margin-top: -27px;
+  margin-left: -25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: jump-jump-2 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: jump-jump-2 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+.frame .center .dot-3 {
+  width: 90px;
+  height: 90px;
+  z-index: 1;
+  margin-top: -45px;
+  margin-left: -40px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: jump-jump-3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: jump-jump-3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+@-webkit-keyframes jump-jump-1 {
+  0%, 70% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes jump-jump-1 {
+  0%, 70% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes jump-jump-2 {
+  0%, 40% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes jump-jump-2 {
+  0%, 40% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes jump-jump-3 {
+  0%, 10% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes jump-jump-3 {
+  0%, 10% {
+    -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.animsition {
+  width: 100%;
+  height: 100vh;
+}
+
+.animation-wrapper {
+  width: 80%;
+  padding-bottom: 50%;
+}
+
+.sphere-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -290px;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 1px;
+  stroke: rgba(80, 80, 80, 0.35);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: 0.4px;
+  }
+}
+
+header {
+  position: absolute;
+  top: 0%;
+  height: 20vh;
+  font-family: 'MADE Soulmaze';
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+header .nav-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2em;
+}
+
+header .nav-title .logo {
+  font-size: 9px;
+}
+
+header .nav-title .logo a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+header .nav-title nav {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+header .nav-title nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+header .nav-title nav ul a {
+  text-decoration: none;
+  color: red;
+  padding: 5px;
+}
+
+.social {
+  position: absolute;
+  top: 83%;
+  right: 2%;
+  margin-right: 2em;
+  z-index: 1;
+}
+
+.social .social-links a {
+  color: white;
+  margin: 15px 0;
+  padding: 1px;
+}
+
+.social .social-links a svg {
+  margin-bottom: 8px;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Montserrat';
+}
+
+section .main {
+  font-size: 2.7em;
+}
+
+section .secondary {
+  font-size: 16px;
+  letter-spacing: 1.5em;
+  padding-left: 10px;
+}
+
+footer {
+  position: absolute;
+  top: 88%;
+  margin-left: 2em;
+  font-family: 'MADE Soulmaze';
+}
+
+footer h1 {
+  font-size: 4.5em;
+  color: red;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .animation-wrapper {
+    width: 50%;
+  }
+  .information {
+    font-size: 1.5em;
+  }
+  .information .main {
+    margin-left: 12px;
+  }
+  .information .secondary {
+    letter-spacing: 2.7em;
+    margin-left: 1.5em;
+  }
+}
+
+@media (min-width: 1080px) {
+  .animation-wrapper {
+    width: 50%;
+  }
+  .information {
+    font-size: 2em;
+  }
+  .information .secondary {
+    font-size: 20px;
+    letter-spacing: 3em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
