@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Abhishek Kumar | Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Poppins&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
       <div class="dot-3"></div>
     </div>
   </div>
-          <div class="animsition">
+          <!-- <div class="animsition"> -->
                 <div class="animation-wrapper">
                         <div class="sphere-animation">
                           <svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
@@ -87,7 +87,7 @@
     <footer>
         <h1>01</h1>
     </footer>
-          </div>
+          <!-- </div> -->
 
           <script
           src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -98,7 +98,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script> -->
     <script src="./js/anime.min.js"></script>
     <script src="js/main.js"></script>
     <script>
@@ -214,30 +214,30 @@ var sphereAnimation = (function() {
         .fromTo(sec,0.5,{opacity: 0,}, {opacity: 1, ease: Power2.easeInOut},'-=1.5');
 
 
-        $(document).ready(function() {
-          $(".animsition").animsition({
-            inClass: 'fade-in',
-            outClass: 'fade-out',
-            inDuration: 1500,
-            outDuration: 800,
-            linkElement: '.animsition-link',
-            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-            loading: true,
-            loadingParentElement: 'body', //animsition wrapper element
-            loadingClass: 'animsition-loading',
-            loadingInner: '', // e.g '<img src="loading.svg" />'
-            timeout: false,
-            timeoutCountdown: 5000,
-            onLoadEvent: true,
-            browser: [ 'animation-duration', '-webkit-animation-duration'],
-            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-            overlay : false,
-            overlayClass : 'animsition-overlay-slide',
-            overlayParentElement : 'body',
-            transition: function(url){ window.location.href = url; }
-          });
-        });
+        // $(document).ready(function() {
+        //   $(".animsition").animsition({
+        //     inClass: 'fade-in',
+        //     outClass: 'fade-out',
+        //     inDuration: 1500,
+        //     outDuration: 800,
+        //     linkElement: '.animsition-link',
+        //     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        //     loading: true,
+        //     loadingParentElement: 'body', //animsition wrapper element
+        //     loadingClass: 'animsition-loading',
+        //     loadingInner: '', // e.g '<img src="loading.svg" />'
+        //     timeout: false,
+        //     timeoutCountdown: 5000,
+        //     onLoadEvent: true,
+        //     browser: [ 'animation-duration', '-webkit-animation-duration'],
+        //     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        //     // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        //     overlay : false,
+        //     overlayClass : 'animsition-overlay-slide',
+        //     overlayParentElement : 'body',
+        //     transition: function(url){ window.location.href = url; }
+        //   });
+        // });
     </script>
 </body>
 </html>
