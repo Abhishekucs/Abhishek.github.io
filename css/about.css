@@ -28,7 +28,7 @@ body {
 header {
   position: absolute;
   top: 0%;
-  font-family: 'MADE Soulmaze';
+  font-family: 'Montserrat';
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
@@ -206,7 +206,7 @@ footer {
   position: absolute;
   top: 88%;
   margin-left: 2em;
-  font-family: 'MADE Soulmaze';
+  font-family: 'Montserrat';
 }
 
 footer h1 {

@@ -97,6 +97,10 @@ body {
           animation: jump-jump-3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
 }
 
+.preload-finish {
+  display: none;
+}
+
 @-webkit-keyframes jump-jump-1 {
   0%, 70% {
     -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
