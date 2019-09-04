@@ -2,12 +2,12 @@
 //   console.log('callback - particles.js config loaded');
 // });
 
-$(window).on("load" , function(){
-  var tlwipe = new TimelineMax()
-  tlwipe.to('.center',1, {autoAlpha: 0})
-  .to('.frame',1,{scaleY: 0, transformOrigin:"center top",ease:  Power1.easeInOut})
-  .to('.frame',0.5,{display: 'none',autoAlpha: 0,ease: Sine.easeIn},'-=0.5');
-});
+// $(window).on("load" , function(){
+//   var tlwipe = new TimelineMax()
+//   tlwipe.to('.center',1, {autoAlpha: 0})
+//   .to('.frame',1,{scaleY: 0, transformOrigin:"center top",ease:  Power1.easeInOut})
+//   .to('.frame',0.5,{display: 'none',autoAlpha: 0,ease: Sine.easeIn},'-=0.5');
+// });
 // Barba.Pjax.start();
 // var FadeTransition = Barba.BaseTransition.extend({
 //   start: function() {
