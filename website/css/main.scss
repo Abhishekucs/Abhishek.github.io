@@ -5,25 +5,18 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100%;
     box-sizing: border-box;
     background: #202020;
     overflow: hidden;
-}
-@font-face {
-    font-family: 'MADE Soulmaze';
-    src: url('/fonts/MADESoulmaze.woff') format('woff'),
-        url('/fonts/MADESoulmaze.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
 }
 .frame{
     position: relative;
     top: 0%;
     left: 0%;
     background:#E56262;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 2;
     .center{
         width: 300px;
