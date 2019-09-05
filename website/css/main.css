@@ -273,20 +273,38 @@ header .nav-title nav ul a {
 
 .social {
   position: absolute;
-  top: 83%;
+  top: 80%;
   right: 2%;
   margin-right: 2em;
   z-index: 1;
 }
 
+.social .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .social .social-links a {
   color: white;
-  margin: 15px 0;
+  margin: 0;
   padding: 1px;
 }
 
 .social .social-links a svg {
-  margin-bottom: 8px;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
 }
 
 section {
@@ -341,7 +359,7 @@ footer h1 {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .animation-wrapper {
     width: 50%;
   }
@@ -357,7 +375,7 @@ footer h1 {
   }
 }
 
-@media (min-width: 1080px) {
+@media screen and (min-width: 1080px) {
   .animation-wrapper {
     width: 50%;
   }
@@ -367,6 +385,48 @@ footer h1 {
   .information .secondary {
     font-size: 20px;
     letter-spacing: 3em;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  header .nav-title .logo {
+    font-size: 6px;
+    margin-top: 5px;
+  }
+  header .links ul {
+    margin-top: 2px;
+    font-size: 11px;
+  }
+  .social {
+    margin-right: 1rem;
+    position: absolute;
+    top: 82%;
+  }
+  .social .social-links a svg {
+    height: 23px;
+    width: 23px;
+    margin: 3px;
+  }
+  .information {
+    font-size: 0.8rem;
+  }
+  .information .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .information .content .secondary {
+    letter-spacing: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -220,12 +220,18 @@ header{
     margin-right: 2em;
     z-index: 1;
     .social-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         a{
-            color:red;;
-            margin: 15px 0;
+            color:white;
+            margin: 0;
             padding: 1px;
             svg{
-                margin-bottom: 8px; 
+                width: 25px;
+                height: 25px;
+                margin-bottom: 5px; 
             }
         }
     }
