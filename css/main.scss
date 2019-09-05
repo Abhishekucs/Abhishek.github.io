@@ -259,3 +259,45 @@ footer{
         }
     }
 }
+@media screen and (min-width : 375px){
+    header{
+        .nav-title{
+            .logo{
+                font-size: 6px;
+                margin-top: 5px;
+            }
+        }
+        .links{
+            ul{
+                margin-top: 2px;
+                font-size: 11px;
+            }
+        }
+    }
+    .social{
+        margin-right: 1rem;
+        position: absolute;
+        top: 82%;
+        .social-links{
+            a{
+                svg{
+                    height: 23px;
+                    width: 23px;
+                    margin: 3px;
+                }
+            }
+        }
+    }
+    .information{
+        font-size: 0.8rem;
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .secondary{
+                letter-spacing: 1rem;
+            }
+        }
+    }
+}
