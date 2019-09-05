@@ -241,7 +241,8 @@ header .nav-title {
 }
 
 header .nav-title .logo {
-  font-size: 9px;
+  font-size: 6px;
+  margin-top: 5px;
 }
 
 header .nav-title .logo a {
@@ -251,12 +252,12 @@ header .nav-title .logo a {
   font-weight: bold;
 }
 
-header .nav-title nav {
-  font-size: 13px;
-  margin-top: 4px;
+header .nav-title .links {
+  font-size: 11px;
+  margin-top: 6px;
 }
 
-header .nav-title nav ul {
+header .nav-title .links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,7 +266,7 @@ header .nav-title nav ul {
   list-style-type: none;
 }
 
-header .nav-title nav ul a {
+header .nav-title .links ul a {
   text-decoration: none;
   color: red;
   padding: 5px;
@@ -273,7 +274,7 @@ header .nav-title nav ul a {
 
 .social {
   position: absolute;
-  top: 80%;
+  top: 78%;
   right: 2%;
   margin-right: 2em;
   z-index: 1;
@@ -302,9 +303,9 @@ header .nav-title nav ul a {
 }
 
 .social .social-links a svg {
-  width: 25px;
-  height: 25px;
-  margin: 5px;
+  width: 23px;
+  height: 23px;
+  margin: 3px;
 }
 
 section {
@@ -318,19 +319,35 @@ section {
   font-weight: bolder;
 }
 
-section .main {
-  font-size: 2.7em;
+section .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section .secondary {
-  font-size: 16px;
+section .content .main {
+  font-size: 2rem;
+}
+
+section .content .secondary {
+  font-size: 12px;
   letter-spacing: 1.5em;
   padding-left: 10px;
 }
 
 footer {
   position: absolute;
-  top: 88%;
+  top: 85.5%;
   margin-left: 2em;
   font-family: 'Poppins';
   font-weight: bold;
@@ -363,39 +380,13 @@ footer h1 {
   .animation-wrapper {
     width: 50%;
   }
-  .information {
-    font-size: 1.5em;
-  }
-  .information .main {
-    margin-left: 12px;
-  }
-  .information .secondary {
-    letter-spacing: 2.7em;
-    margin-left: 1.5em;
-  }
-}
-
-@media screen and (min-width: 1080px) {
-  .animation-wrapper {
-    width: 50%;
-  }
-  .information {
-    font-size: 2em;
-  }
-  .information .secondary {
-    font-size: 20px;
-    letter-spacing: 3em;
-  }
-}
-
-@media screen and (min-width: 375px) {
   header .nav-title .logo {
-    font-size: 6px;
+    font-size: 0.6rem;
     margin-top: 5px;
   }
   header .links ul {
     margin-top: 2px;
-    font-size: 11px;
+    font-size: 1rem;
   }
   .social {
     margin-right: 1rem;
@@ -403,12 +394,9 @@ footer h1 {
     top: 82%;
   }
   .social .social-links a svg {
-    height: 23px;
-    width: 23px;
+    height: 25px;
+    width: 25px;
     margin: 3px;
-  }
-  .information {
-    font-size: 0.8rem;
   }
   .information .content {
     display: -webkit-box;
@@ -425,8 +413,75 @@ footer h1 {
         -ms-flex-align: center;
             align-items: center;
   }
+  .information .content .main {
+    font-size: 2.8rem;
+  }
   .information .content .secondary {
-    letter-spacing: 1rem;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    letter-spacing: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .animation-wrapper {
+    width: 50%;
+  }
+  .information .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .information .content .main {
+    font-size: 3.7rem;
+  }
+  .information .content .secondary {
+    font-weight: lighter;
+    font-size: 1.7rem;
+    letter-spacing: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .animation-wrapper {
+    width: 50%;
+  }
+  .information .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .information .content .main {
+    font-size: 7rem;
+  }
+  .information .content .secondary {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-weight: lighter;
+    font-size: 2.2rem;
+    letter-spacing: 4.3rem;
+    justify-items: center;
+    padding-left: 4rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
