@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    height: calc(var(--vh, 1vh) * 100);
+}
 body{
     // margin: 0;
     // padding: 0;
@@ -10,7 +13,6 @@ body{
     box-sizing: border-box;
     background: #202020;
     overflow: hidden;
-    height: calc(var(--vh, 1vh) * 100);
 }
 // .page{
 //     width: 100vw;
