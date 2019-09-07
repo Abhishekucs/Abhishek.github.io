@@ -214,6 +214,8 @@ body {
 }
 
 header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   top: 0%;
   height: 20vh;
@@ -267,6 +269,8 @@ header .nav-title .links ul a {
 }
 
 .social {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   top: 78%;
   right: 2%;
@@ -303,6 +307,8 @@ header .nav-title .links ul a {
 }
 
 section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -340,6 +346,8 @@ section .content .secondary {
 }
 
 footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   top: 85.5%;
   margin-left: 2em;
