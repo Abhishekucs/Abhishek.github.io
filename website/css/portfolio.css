@@ -4,8 +4,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   width: 100vw;
   height: 100vh;
   -webkit-box-sizing: border-box;
@@ -15,6 +13,8 @@ body {
 }
 
 .portfolio-heading {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   position: absolute;
   top: 13%;
   left: 50%;
@@ -30,6 +30,8 @@ body {
 }
 
 .swiper-container {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   width: 100%;
   position: absolute;
   top: 45%;
@@ -76,9 +78,10 @@ body {
 }
 
 header {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   position: absolute;
   top: 0%;
-  height: 20vh;
   font-family: 'Poppins';
   font-weight: bold;
   -ms-flex-pack: distribute;

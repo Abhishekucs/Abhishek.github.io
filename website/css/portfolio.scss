@@ -3,8 +3,8 @@
     padding: 0;
 }
 body{
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -113,6 +113,7 @@ body{
 //     }
 //   }
 .portfolio-heading{
+    box-sizing: inherit;
     position: absolute;
     top: 13%;
     left: 50%;
@@ -125,6 +126,7 @@ body{
     box-sizing: border-box;
 }
 .swiper-container {
+    box-sizing: inherit;
     width: 100%;
     position: absolute;
     top: 45%;
@@ -167,9 +169,10 @@ body{
 //     height: 100vh;
 // }
 header{
+    box-sizing: inherit;
     position: absolute;
     top: 0%;
-    height: 20vh;
+    // height: 20vh;
     font-family: 'Poppins';
     font-weight: bold;
     // color: white;
