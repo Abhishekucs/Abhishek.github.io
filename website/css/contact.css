@@ -356,27 +356,45 @@ footer h1 {
   color: red;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  header .nav-title .logo {
+    font-size: 0.6rem;
+    margin-top: 5px;
+  }
+  header .links ul {
+    margin-top: 2px;
+    font-size: 1rem;
+  }
+  .social {
+    margin-right: 1rem;
+    position: absolute;
+    top: 82%;
+  }
+  .social .social-links a svg {
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+  }
   main {
     width: 75%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     position: absolute;
     left: 50%;
-    top: 0%;
+    top: 10%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
 }
 
-@media (min-width: 1080px) {
+@media only screen and (min-width: 1024px) {
   main {
     width: 50%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     position: absolute;
     left: 50%;
-    top: 0%;
+    top: 10%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
