@@ -7,17 +7,13 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #202020;
-}
-
-@font-face {
-  font-family: 'MADE Soulmaze';
-  src: url("/fonts/MADESoulmaze.woff") format("woff"), url("/fonts/MADESoulmaze.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+  overflow: hidden !important;
+  overflow-y: hidden !important;
 }
 
 header {
@@ -43,7 +39,8 @@ header .nav-title {
 }
 
 header .nav-title .logo {
-  font-size: 9px;
+  font-size: 6px;
+  margin-top: 5px;
 }
 
 header .nav-title .logo a {
@@ -54,8 +51,8 @@ header .nav-title .logo a {
 }
 
 header .nav-title nav {
-  font-size: 13px;
-  margin-top: 4px;
+  font-size: 11px;
+  margin-top: 5px;
 }
 
 header .nav-title nav ul {
@@ -75,7 +72,7 @@ header .nav-title nav ul a {
 
 .social {
   position: absolute;
-  top: 83%;
+  top: 78%;
   right: 2%;
   margin-right: 2em;
   z-index: 1;
@@ -104,14 +101,14 @@ header .nav-title nav ul a {
 }
 
 .social .social-links a svg {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 5px;
+  width: 23px;
+  height: 23px;
+  margin: 3px;
 }
 
 main {
   width: 85%;
-  height: 100vh;
+  height: 80vh;
   font-family: 'Montserrat';
   position: relative;
   left: 50%;
@@ -122,7 +119,7 @@ main {
 
 main .contact-info {
   position: absolute;
-  top: 12%;
+  top: 0%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -133,12 +130,12 @@ main .contact-info {
 }
 
 main .contact-info h2 {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 main .message {
   position: absolute;
-  top: 22%;
+  top: 13%;
   left: 50%;
   -webkit-transform: translatex(-50%);
           transform: translatex(-50%);
@@ -154,9 +151,9 @@ main .message p {
 
 main .form {
   width: 85%;
-  height: 60%;
+  height: 50%;
   position: relative;
-  top: 30%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translatex(-50%);
           transform: translatex(-50%);
@@ -165,7 +162,8 @@ main .form {
 
 main .form section {
   width: 100%;
-  height: 50px;
+  height: 30px;
+  margin-top: 1em;
 }
 
 main .form .name-info {
@@ -176,31 +174,31 @@ main .form .name-info {
 
 main .form .email-info {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 0;
 }
 
 main .form .message-info {
   position: absolute;
-  top: 45%;
+  top: 60%;
   left: 0;
 }
 
 main .form .subject-info {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 0;
 }
 
 main .form .submit-btn {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 0;
 }
 
 main .form .submit-btn .btn {
   width: 100%;
-  height: 50px;
+  height: 30px;
   font-family: 'Montserrat';
   font-weight: lighter;
   font-size: 16px;
@@ -239,6 +237,8 @@ main .form .submit-btn .btn:hover::before {
 }
 
 main .form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 100%;
   color: red;
@@ -292,8 +292,8 @@ main .form .content-name, main .form .content-email, main .form .content-message
 }
 
 main .form input:focus + .label-name .content-name, main .form input:valid + .label-name .content-name, main .form input:focus + .label-email .content-email, main .form input:valid + .label-email .content-email, main .form input:focus + .label-message .content-message, main .form input:valid + .label-message .content-message, main .form input:focus + .label-subject .content-subject, main .form input:valid + .label-subject .content-subject {
-  -webkit-transform: translateY(-150%);
-          transform: translateY(-150%);
+  -webkit-transform: translateY(-140%);
+          transform: translateY(-140%);
   font-size: 14px;
   color: red;
 }
@@ -308,19 +308,18 @@ main .touch {
   width: 100%;
   height: 20vh;
   overflow: hidden;
-  top: 75%;
+  top: 73%;
   left: 0;
   color: red;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: -50px;
-  padding: 25px 0;
+  padding: 10px 0;
 }
 
 main .touch .touch-get {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 1.3em;
+  margin-bottom: 5px;
   font-weight: lighter;
   font-family: 'Poppins';
 }
@@ -328,7 +327,7 @@ main .touch .touch-get {
 main .touch svg {
   height: 30px;
   width: 30px;
-  margin: 10px 0;
+  margin: 5px 0;
   color: white;
 }
 
@@ -346,7 +345,7 @@ main .touch .touch-email {
 
 footer {
   position: absolute;
-  top: 88%;
+  top: 85.5%;
   margin-left: 2em;
   font-family: 'Poppins';
   font-weight: bold;
