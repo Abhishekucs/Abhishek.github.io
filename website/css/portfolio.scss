@@ -5,18 +5,11 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100vw;
     height: 100vh;
     box-sizing: border-box;
     background: #202020;
     overflow: hidden;
-}
-
-@font-face {
-    font-family: 'MADE Soulmaze';
-    src: url('/fonts/MADESoulmaze.woff') format('woff'),
-        url('/fonts/MADESoulmaze.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
 }
 // .page{
 //     width: 100vw;
@@ -121,7 +114,7 @@ body{
 //   }
 .portfolio-heading{
     position: absolute;
-    top: 15%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-family: 'Montserrat';
@@ -143,8 +136,8 @@ body{
   .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     img{
         width: 100%;
         height: 85%;
@@ -182,13 +175,14 @@ header{
     // color: white;
     justify-content: space-around;
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
     .nav-title{
         display: flex;
         justify-content: space-between;
         margin: 2em;
         .logo{
-            font-size: 9px;
+            font-size: 6px;
+            margin-top: 5px;
             a{
                 text-decoration: none;
                 color: white;
@@ -197,8 +191,8 @@ header{
             }
         }
         nav {
-        font-size: 13px;
-        margin-top: 4px;
+        font-size: 11px;
+        margin-top: 6px;
             ul{
             display: flex;
             justify-content: space-around;
@@ -215,7 +209,7 @@ header{
 }
 .social{
     position: absolute;
-    top: 83%;
+    top: 78%;
     right: 2%;
     margin-right: 2em;
     z-index: 1;
@@ -229,16 +223,16 @@ header{
             margin: 0;
             padding: 1px;
             svg{
-                width: 25px;
-                height: 25px;
-                margin-bottom: 5px; 
+                width: 23px;
+                height: 23px;
+                margin: 3px; 
             }
         }
     }
 }
 footer{
     position: absolute;
-    top:88%;
+    top:85.5%;
     margin-left: 2em;
     font-family: 'Poppins';
     font-weight: bold;

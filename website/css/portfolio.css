@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,16 +14,9 @@ body {
   overflow: hidden;
 }
 
-@font-face {
-  font-family: 'MADE Soulmaze';
-  src: url("/fonts/MADESoulmaze.woff") format("woff"), url("/fonts/MADESoulmaze.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .portfolio-heading {
   position: absolute;
-  top: 15%;
+  top: 13%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -49,8 +43,8 @@ body {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 450px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 .swiper-slide img {
@@ -90,7 +84,7 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
 }
 
 header .nav-title {
@@ -104,7 +98,8 @@ header .nav-title {
 }
 
 header .nav-title .logo {
-  font-size: 9px;
+  font-size: 6px;
+  margin-top: 5px;
 }
 
 header .nav-title .logo a {
@@ -115,8 +110,8 @@ header .nav-title .logo a {
 }
 
 header .nav-title nav {
-  font-size: 13px;
-  margin-top: 4px;
+  font-size: 11px;
+  margin-top: 6px;
 }
 
 header .nav-title nav ul {
@@ -136,7 +131,7 @@ header .nav-title nav ul a {
 
 .social {
   position: absolute;
-  top: 83%;
+  top: 78%;
   right: 2%;
   margin-right: 2em;
   z-index: 1;
@@ -165,14 +160,14 @@ header .nav-title nav ul a {
 }
 
 .social .social-links a svg {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 5px;
+  width: 23px;
+  height: 23px;
+  margin: 3px;
 }
 
 footer {
   position: absolute;
-  top: 88%;
+  top: 85.5%;
   margin-left: 2em;
   font-family: 'Poppins';
   font-weight: bold;
