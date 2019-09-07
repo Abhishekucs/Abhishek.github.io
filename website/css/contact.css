@@ -34,7 +34,7 @@ header .nav-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2em;
+  margin: 1em 2em 2em 2em;
 }
 
 header .nav-title .logo {
