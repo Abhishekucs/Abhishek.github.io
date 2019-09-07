@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-:root {
-  height: calc(var(--vh, 1vh) * 100);
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +12,7 @@ body {
   background: #202020;
   overflow: hidden !important;
   overflow-y: hidden !important;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .frame {
