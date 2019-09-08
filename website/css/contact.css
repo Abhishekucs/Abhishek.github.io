@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 100vw;
+  min-height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
