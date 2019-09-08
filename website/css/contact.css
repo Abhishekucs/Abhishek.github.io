@@ -15,9 +15,21 @@ body {
   overflow: hidden !important;
   overflow-y: hidden !important;
   height: calc(var(--vh, 1vh) * 100);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 1fr 5%;
+      grid-template-columns: 5% 1fr 5%;
+  -ms-grid-rows: 5% 1fr 5%;
+      grid-template-rows: 5% 1fr 5%;
 }
 
 header {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   position: absolute;
   top: 0%;
   font-family: 'Poppins';
@@ -71,6 +83,12 @@ header .nav-title nav ul a {
 }
 
 .social {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   position: absolute;
   top: 78%;
   right: 2%;
@@ -108,6 +126,9 @@ header .nav-title nav ul a {
 }
 
 main {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   width: 85%;
   height: 80%;
   font-family: 'Montserrat';
@@ -345,6 +366,12 @@ main .touch .touch-email {
 }
 
 footer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   position: absolute;
   top: 85.5%;
   margin-left: 2em;
