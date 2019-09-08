@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
+  height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #202020;
@@ -74,7 +75,8 @@ header .nav-title nav ul a {
   top: 78%;
   right: 2%;
   margin-right: 2em;
-  z-index: 1;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .social .social-links {
