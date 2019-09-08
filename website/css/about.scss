@@ -3,7 +3,7 @@
     padding: 0;
 }
 :root{
-    
+    height: calc(var(--vh, 1vh) * 100);
 }
 body{
     margin: 0;
@@ -13,7 +13,6 @@ body{
     box-sizing: border-box !important;
     background: #202020;
     overflow: hidden !important;
-    height: calc(var(--vh, 1vh) * 100);
 }
 // #particles-js{
 //     width: 100%;
