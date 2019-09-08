@@ -3,18 +3,16 @@
   padding: 0;
 }
 
-:root {
-  height: calc(var(--vh, 1vh) * 100);
-}
-
 body {
   margin: 0;
   padding: 0;
   min-width: 100vw;
+  min-height: 100vh;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
   background: #202020;
   overflow: hidden !important;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 header {
@@ -114,7 +112,7 @@ header .nav-title nav ul a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   color: white;
   position: absolute;
   top: 0%;
