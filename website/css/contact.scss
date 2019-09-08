@@ -17,6 +17,7 @@ body{
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: 5% 1fr 5%;
+    grid-row-gap: 1em;
 }
 // .animsition{
 //     width: 100%;
@@ -120,8 +121,7 @@ header{
 .social{
     grid-column: 2/3;
     grid-row: 3/4;
-    justify-self: end;
-    width: 10%;
+    // width: 10%;
     // position: absolute;
     // top: 78%;
     // right: 2%;
@@ -130,7 +130,6 @@ header{
     cursor: pointer;
     .social-links{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         a{
@@ -140,7 +139,7 @@ header{
             svg{
                 width: 20px;
                 height: 20px;
-                margin: 0px; 
+                margin: 0px 1em; 
             }
         }
     }
@@ -357,7 +356,7 @@ footer{
     font-family: 'Poppins';
     font-weight: bold;
     h1{
-        font-size: 4em;
+        font-size: 2em;
         color: red;
     }
 }
