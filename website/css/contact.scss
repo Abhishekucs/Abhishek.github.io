@@ -3,18 +3,17 @@
     padding: 0;
 }
 :root{
-    
+    height: calc(var(--vh, 1vh) * 100);
 }
 body{
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     box-sizing: border-box;
     background: #202020;
     overflow: hidden !important;
-    overflow-y: hidden !important;
-    height: calc(var(--vh, 1vh) * 100);
+    // overflow-y: hidden !important;
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: 5% 1fr 5%;
@@ -75,20 +74,22 @@ body{
 //   }
 header{
     grid-column: 2/3;
-    grid-row: 2/3;
-    position: absolute;
-    top: 0%;
+    grid-row: 1/2;
+    // background: lightblue;
+    // position: absolute;
+    // top: 0%;
     // height: 20vh;
     font-family: 'Poppins';
     font-weight: bold;
     // color: white;
-    justify-content: space-around;
+    // justify-content: space-between;
     width: 100%;
     z-index: 1;
     .nav-title{
         display: flex;
-        justify-content: space-between;
-        margin: 1em 2em 2em 2em;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1em 0;
         .logo{
             font-size: 6px;
             margin-top: 5px;
@@ -105,6 +106,7 @@ header{
             ul{
             display: flex;
             justify-content: space-around;
+            align-items: center;
             list-style-type: none;
             a{
                 text-decoration: none;
@@ -117,11 +119,13 @@ header{
 }
 .social{
     grid-column: 2/3;
-    grid-row: 2/3;
-    position: absolute;
-    top: 78%;
-    right: 2%;
-    margin-right: 2em;
+    grid-row: 3/4;
+    justify-self: end;
+    width: 10%;
+    // position: absolute;
+    // top: 78%;
+    // right: 2%;
+    // margin-right: 2em;
     z-index: 3;
     cursor: pointer;
     .social-links{
@@ -134,41 +138,44 @@ header{
             margin: 0;
             padding: 1px;
             svg{
-                width: 23px;
-                height: 23px;
-                margin: 3px; 
+                width: 20px;
+                height: 20px;
+                margin: 0px; 
             }
         }
     }
 }
 main{
     grid-column: 2/3;
-    width: 85%;
-    height: 80%;
+    grid-row: 2/3;
+    // width: 85%;
+    // height: 80%;
     font-family: 'Montserrat';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%,-50%);
     .contact-info{
-        position: absolute;
+        position: relative;
         top: 0%;
-        left: 50%;
-        transform: translateX(-50%);
         color: white;
         text-transform: uppercase;
-        border: 1px solid white;
-        padding: 10px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: 40%;
         h2{
+            border: 1px solid white;
             font-size: 1em;
+            padding: 10px 15px;
         }
     }
     .message{
-        position: absolute;
-        top: 13%;
+        position: relative;
+        top: 5%;
         left: 50%;
         transform: translatex(-50%);
-        width: 100%;
+        // width: 100%;
         text-align: center;
         text-transform: uppercase;
         color: white;
@@ -179,10 +186,10 @@ main{
     }
     
         .form{
-           width: 85%;
+        //    width: 85%;
            height: 50%;
            position: relative;
-           top: 25%;
+           top: 10%;
            left: 50%;
            transform: translatex(-50%);
            overflow: hidden;
@@ -303,18 +310,18 @@ main{
             }
         }
         .touch{
-            position: absolute;
-            width: 100%;
-            height: 20vh;
+            position: relative;
+            // width: 100%;
+            // height: 20vh;
             overflow: hidden;
-            top: 73%;
+            top: 10%;
             left: 0;
             color: red;
             text-align: center;
             box-sizing: border-box;
             // border: 1px solid white;
             // margin-top: -50px;
-            padding: 10px 0;
+            // padding: 10px 0;
             .touch-get{
                 font-size: 1.3em;
                 margin-bottom: 5px;
@@ -335,21 +342,22 @@ main{
             .touch-email{
                 font-size: 15px;
                 font-weight: lighter;
-                margin-top: 10px;
+                margin-top: 5px;
                 font-family: 'Poppins';
             }
         }
     }
 footer{
     grid-column: 2/3;
-    grid-row: 2/3;
-    position: absolute;
-    top:85.5%;
-    margin-left: 2em;
+    grid-row: 3/4;
+    width: 25%;
+    // position: absolute;
+    // top:85.5%;
+    // padding-top: 2em;
     font-family: 'Poppins';
     font-weight: bold;
     h1{
-        font-size: 4.5em;
+        font-size: 4em;
         color: red;
     }
 }

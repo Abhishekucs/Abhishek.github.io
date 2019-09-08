@@ -4,17 +4,19 @@
   padding: 0;
 }
 
+:root {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #202020;
   overflow: hidden !important;
-  overflow-y: hidden !important;
-  height: calc(var(--vh, 1vh) * 100);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
@@ -27,15 +29,11 @@ header {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  position: absolute;
-  top: 0%;
+  grid-row: 1/2;
   font-family: 'Poppins';
   font-weight: bold;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 100%;
   z-index: 1;
 }
@@ -44,10 +42,12 @@ header .nav-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 1em 2em 2em 2em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0;
 }
 
 header .nav-title .logo {
@@ -73,6 +73,9 @@ header .nav-title nav ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
 }
 
@@ -86,13 +89,12 @@ header .nav-title nav ul a {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  position: absolute;
-  top: 78%;
-  right: 2%;
-  margin-right: 2em;
+  grid-row: 3/4;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 10%;
   z-index: 3;
   cursor: pointer;
 }
@@ -120,48 +122,49 @@ header .nav-title nav ul a {
 }
 
 .social .social-links a svg {
-  width: 23px;
-  height: 23px;
-  margin: 3px;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
 }
 
 main {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  width: 85%;
-  height: 80%;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   font-family: 'Montserrat';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 main .contact-info {
-  position: absolute;
+  position: relative;
   top: 0%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   color: white;
   text-transform: uppercase;
-  border: 1px solid white;
-  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .contact-info h2 {
+  border: 1px solid white;
   font-size: 1em;
+  padding: 10px 15px;
 }
 
 main .message {
-  position: absolute;
-  top: 13%;
+  position: relative;
+  top: 5%;
   left: 50%;
   -webkit-transform: translatex(-50%);
           transform: translatex(-50%);
-  width: 100%;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -172,10 +175,9 @@ main .message p {
 }
 
 main .form {
-  width: 85%;
   height: 50%;
   position: relative;
-  top: 25%;
+  top: 10%;
   left: 50%;
   -webkit-transform: translatex(-50%);
           transform: translatex(-50%);
@@ -326,17 +328,14 @@ main .form input:focus + .label-name::after, main .form input:valid + .label-nam
 }
 
 main .touch {
-  position: absolute;
-  width: 100%;
-  height: 20vh;
+  position: relative;
   overflow: hidden;
-  top: 73%;
+  top: 10%;
   left: 0;
   color: red;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 0;
 }
 
 main .touch .touch-get {
@@ -361,7 +360,7 @@ main .touch h5 {
 main .touch .touch-email {
   font-size: 15px;
   font-weight: lighter;
-  margin-top: 10px;
+  margin-top: 5px;
   font-family: 'Poppins';
 }
 
@@ -369,18 +368,16 @@ footer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  position: absolute;
-  top: 85.5%;
-  margin-left: 2em;
+  grid-row: 3/4;
+  width: 25%;
   font-family: 'Poppins';
   font-weight: bold;
 }
 
 footer h1 {
-  font-size: 4.5em;
+  font-size: 4em;
   color: red;
 }
 
