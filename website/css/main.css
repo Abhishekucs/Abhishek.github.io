@@ -4,15 +4,16 @@
 }
 
 html {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: #202020;
   overflow: hidden !important;
   display: -ms-grid;

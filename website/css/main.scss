@@ -6,14 +6,15 @@
 //     height: calc(var(--vh, 1vh) * 100);
 // }
 html{
-    box-sizing: border-box;
-}
-body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
+}
+body{
     // box-sizing: border-box !important;
+    height: 100%;
     background: #202020;
     overflow: hidden !important;
     display: grid;
