@@ -6,7 +6,7 @@
 //     height: calc(var(--vh, 1vh) * 100);
 // }
 html{
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
 }
 body{
     margin: 0;
@@ -125,6 +125,7 @@ header{
 .social{
     grid-column: 2/3;
     grid-row: 3/4;
+    overflow: hidden;
     // width: 10%;
     // position: absolute;
     // top: 78%;
@@ -151,6 +152,7 @@ header{
 main{
     grid-column: 2/3;
     grid-row: 2/3;
+    overflow: hidden;
     // width: 85%;
     // height: 80%;
     font-family: 'Montserrat';

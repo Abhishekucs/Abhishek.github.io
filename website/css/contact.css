@@ -5,7 +5,7 @@
 }
 
 html {
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: calc(var(--vh, 1vh) * 100);
 }
 
 body {
@@ -93,6 +93,7 @@ header .nav-title nav ul a {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  overflow: hidden;
   z-index: 3;
   cursor: pointer;
 }
@@ -128,6 +129,7 @@ main {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  overflow: hidden;
   font-family: 'Montserrat';
 }
 
