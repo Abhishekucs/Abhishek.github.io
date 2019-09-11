@@ -5,23 +5,24 @@
 // :root{
 //     height: calc(var(--vh, 1vh) * 100);
 // }
-html,body{
-    width: 100vw;
-    height: 100vh;
+html{
+    margin: 0;
+    min-height: 100%;
     // height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
 }
-// body{
-//     // box-sizing: border-box !important;
-//     // width: 100vw;
-//     // height: 100vh;
-//     // background: #202020;
-//     // overflow: hidden !important;
-//     // display: grid;
-//     // grid-template-columns: 5% 1fr 5%;
-//     // grid-template-rows: 5% 1fr 5%;
-//     // grid-row-gap: 1em;
-// }
+body{
+    // box-sizing: border-box !important;
+    width: 100vw;
+    min-height: 100%;
+    margin: 0;
+    // background: #202020;
+    // overflow: hidden !important;
+    // display: grid;
+    // grid-template-columns: 5% 1fr 5%;
+    // grid-template-rows: 5% 1fr 5%;
+    // grid-row-gap: 1em;
+}
 .body-container{
     box-sizing: border-box !important;
     display: grid;
