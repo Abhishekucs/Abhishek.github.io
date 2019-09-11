@@ -9,13 +9,14 @@ html{
     margin: 0;
     min-height: 100%;
     // height: calc(var(--vh, 1vh) * 100);
-    overflow: hidden;
+    
 }
 body{
     // box-sizing: border-box !important;
     width: 100vw;
     min-height: 100%;
     margin: 0;
+    overflow: hidden;
     // background: #202020;
     // overflow: hidden !important;
     // display: grid;
