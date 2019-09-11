@@ -212,9 +212,13 @@ var sphereAnimation = (function() {
         .fromTo(sec,0.5,{opacity: 0,}, {opacity: 1, ease: Power2.easeInOut},'-=1.5');
 
 
-        let vh = window.innerHeight * 0.01;
-        console.log(vh);
-        document.documentElement.style.setProperty('--vh','${vh}px');
+        // let vh = window.innerHeight * 0.01;
+        // console.log(vh);
+        // document.documentElement.style.setProperty('--vh','${vh}px');
+
+        var vhHeight = $("body").height();
+        var chromeNavbarHeight = vhHeight - window.innerHeight;
+        $('body').css({height: window.innerHeight,marginTop: chromeNavbarHeight});
     </script>
 </body>
 </html>
