@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+html {
+  width: 100vw;
+  min-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 .body-container {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
@@ -15,9 +21,8 @@
   grid-row-gap: 1em;
   overflow: hidden !important;
   background: #202020;
-  min-height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
