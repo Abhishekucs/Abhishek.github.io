@@ -1,0 +1,423 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #202020;
+  overflow: hidden !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 1fr 5%;
+      grid-template-columns: 5% 1fr 5%;
+  -ms-grid-rows: 5% 1fr 5%;
+      grid-template-rows: 5% 1fr 5%;
+  grid-row-gap: 1em;
+}
+
+header {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  font-family: 'Poppins';
+  font-weight: bold;
+  width: 100%;
+  z-index: 1;
+}
+
+header .nav-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0;
+}
+
+header .nav-title .logo {
+  font-size: 6px;
+  margin-top: 5px;
+}
+
+header .nav-title .logo a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+header .nav-title nav {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+header .nav-title nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+header .nav-title nav ul a {
+  text-decoration: none;
+  color: red;
+  padding: 5px;
+}
+
+.social {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  overflow: hidden;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.social .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social .social-links a {
+  color: white;
+  margin: 0;
+  padding: 1px;
+}
+
+.social .social-links a svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 1em;
+}
+
+main {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  overflow: hidden;
+  font-family: 'Montserrat';
+}
+
+main .contact-info {
+  position: relative;
+  top: 0%;
+  color: white;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contact-info h2 {
+  border: 1px solid white;
+  font-size: 1em;
+  padding: 10px 15px;
+}
+
+main .message {
+  position: relative;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+main .message p {
+  font-size: 1em;
+}
+
+main .form {
+  height: 50%;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  overflow: hidden;
+}
+
+main .form section {
+  width: 100%;
+  height: 30px;
+  margin-top: 1em;
+}
+
+main .form .name-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .form .email-info {
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+
+main .form .message-info {
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+
+main .form .subject-info {
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+main .form .submit-btn {
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+
+main .form .submit-btn .btn {
+  width: 100%;
+  height: 30px;
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  font-size: 16px;
+  border: none;
+  cursor: crosshair;
+  outline: none;
+  background: none;
+  color: white;
+}
+
+main .form .submit-btn .btn::after {
+  content: "→";
+  padding-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .form .submit-btn .btn::before {
+  background: red;
+  content: " ";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+}
+
+main .form .submit-btn .btn:hover::before {
+  width: 100%;
+}
+
+main .form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  color: red;
+  padding-top: 15px;
+  background: #202020;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Montserrat';
+}
+
+main .form label {
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: white;
+  border-bottom: 1px solid lightcyan;
+}
+
+main .form label::after {
+  content: " ";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  bottom: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid red;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+main .form .content-name, main .form .content-email, main .form .content-message, main .form .content-subject {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .form input:focus + .label-name .content-name, main .form input:valid + .label-name .content-name, main .form input:focus + .label-email .content-email, main .form input:valid + .label-email .content-email, main .form input:focus + .label-message .content-message, main .form input:valid + .label-message .content-message, main .form input:focus + .label-subject .content-subject, main .form input:valid + .label-subject .content-subject {
+  -webkit-transform: translateY(-140%);
+          transform: translateY(-140%);
+  font-size: 14px;
+  color: red;
+}
+
+main .form input:focus + .label-name::after, main .form input:valid + .label-name::after, main .form input:focus + .label-email::after, main .form input:valid + .label-email::after, main .form input:focus + .label-message::after, main .form input:valid + .label-message::after, main .form input:focus + .label-subject::after, main .form input:valid + .label-subject::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+main .touch {
+  position: relative;
+  overflow: hidden;
+  top: 10%;
+  left: 0;
+  color: red;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .touch .touch-get {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  font-weight: lighter;
+  font-family: 'Poppins';
+}
+
+main .touch svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px 0;
+  color: white;
+}
+
+main .touch h5 {
+  text-transform: uppercase;
+  color: white;
+}
+
+main .touch .touch-email {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 5px;
+  font-family: 'Poppins';
+}
+
+footer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  width: 25%;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+footer h1 {
+  font-size: 2em;
+  color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  header .nav-title .logo {
+    font-size: 0.6rem;
+    margin-top: 5px;
+  }
+  header .links ul {
+    margin-top: 2px;
+    font-size: 1rem;
+  }
+  .social {
+    margin-right: 1rem;
+    position: absolute;
+    top: 82%;
+  }
+  .social .social-links a svg {
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+  }
+  main {
+    width: 75%;
+    height: 80vh;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    width: 50%;
+    height: 80vh;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+/*# sourceMappingURL=contact.css.map */
