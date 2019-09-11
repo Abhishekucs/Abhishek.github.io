@@ -1,15 +1,22 @@
 {
-  "name": "4",
+  "name": "Abhishek.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my Website",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d website"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhishekucs/Abhishek.github.io.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://Abhishekucs.github.io/Abhishek.github.io",
+  "bugs": {
+    "url": "https://github.com/Abhishekucs/Abhishek.github.io/issues"
+  },
+  "homepage": "https://github.com/Abhishekucs/Abhishek.github.io",
   "dependencies": {
     "gh-pages": "^2.1.1"
   }
