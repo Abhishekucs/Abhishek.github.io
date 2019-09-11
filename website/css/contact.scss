@@ -5,23 +5,38 @@
 // :root{
 //     height: calc(var(--vh, 1vh) * 100);
 // }
-html{
-    min-height: calc(var(--vh, 1vh) * 100);
-}
-body{
-    margin: 0;
-    padding: 0;
+// html{
+//     min-height: calc(var(--vh, 1vh) * 100);
+// }
+html,body{
+    // margin: 0;
+    // padding: 0;
     width: 100vw;
     height: 100vh;
     // height: calc(var(--vh, 1vh) * 100);
-    box-sizing: border-box;
-    background: #202020;
+    // box-sizing: border-box;
+    // background: #202020;
     overflow: hidden !important;
     // overflow-y: hidden !important;
+    // display: grid;
+    // grid-template-columns: 5% 1fr 5%;
+    // grid-template-rows: 5% 1fr 5%;
+    // grid-row-gap: 1em;
+}
+.body-container{
+    box-sizing: border-box !important;
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     grid-template-rows: 5% 1fr 5%;
     grid-row-gap: 1em;
+    overflow: hidden !important;
+    background: #202020;
+    height: 100%;
+    // height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 // .animsition{
 //     width: 100%;

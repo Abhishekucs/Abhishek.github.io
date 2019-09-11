@@ -4,19 +4,15 @@
   padding: 0;
 }
 
-html {
-  min-height: calc(var(--vh, 1vh) * 100);
-}
-
-body {
-  margin: 0;
-  padding: 0;
+html, body {
   width: 100vw;
   height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: #202020;
   overflow: hidden !important;
+}
+
+.body-container {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
@@ -24,6 +20,13 @@ body {
   -ms-grid-rows: 5% 1fr 5%;
       grid-template-rows: 5% 1fr 5%;
   grid-row-gap: 1em;
+  overflow: hidden !important;
+  background: #202020;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 header {
