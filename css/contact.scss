@@ -5,14 +5,15 @@
 // :root{
 //     height: calc(var(--vh, 1vh) * 100);
 // }
-// html{
-//     min-height: calc(var(--vh, 1vh) * 100);
-// }
-html,body{
-    // margin: 0;
+html{
+    min-height: 100%;
+    margin: 0;
+}
+body{
+    margin: 0;
     // padding: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100%;
     // height: calc(var(--vh, 1vh) * 100);
     // box-sizing: border-box;
     // background: #202020;
