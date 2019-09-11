@@ -4,12 +4,14 @@
 }
 
 body {
-  -webkit-box-sizing: border-box !important;
-          box-sizing: border-box !important;
   width: 100vw;
   height: 100vh;
   background: #202020;
-  overflow: hidden !important;
+}
+
+.body-container {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
@@ -17,6 +19,9 @@ body {
   -ms-grid-rows: 5% 1fr 5%;
       grid-template-rows: 5% 1fr 5%;
   grid-row-gap: 1em;
+  overflow: hidden !important;
+  height: 100%;
+  width: 100%;
 }
 
 .frame {
