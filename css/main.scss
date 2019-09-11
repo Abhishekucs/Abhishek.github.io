@@ -6,24 +6,28 @@
 //     height: calc(var(--vh, 1vh) * 100);
 // }
 html{
-    margin: 0;
-    height: 100%;
-    
+    // margin: 0;
+    // height: 100%;
+    overflow: hidden;
     // height: calc(var(--vh, 1vh) * 100);
     
 }
 body{
     // box-sizing: border-box !important;
-    width: 100vw;
-    min-height: 100%;
+    // width: 100vw;
+    // min-height: 100%;
     margin: 0;
-    overflow: hidden;
+    box-sizing: border-box;
+    // overflow: hidden;
     // background: #202020;
     // overflow: hidden !important;
     // display: grid;
     // grid-template-columns: 5% 1fr 5%;
     // grid-template-rows: 5% 1fr 5%;
     // grid-row-gap: 1em;
+}
+html,body{
+    height: 100%;
 }
 .body-container{
     box-sizing: border-box !important;
