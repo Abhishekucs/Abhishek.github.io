@@ -15,7 +15,8 @@
   grid-row-gap: 1em;
   overflow: hidden !important;
   background: #202020;
-  height: 100vh;
+  min-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   position: absolute;
   left: 0;
