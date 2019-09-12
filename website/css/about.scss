@@ -2,17 +2,37 @@
     margin: 0;
     padding: 0;
 }
-:root{
-    height: calc(var(--vh, 1vh) * 100);
+// :root{
+//     height: calc(var(--vh, 1vh) * 100);
+// }
+html{
+    margin: 0;
+    min-height: 100%;
+    box-sizing: border-box;
 }
 body{
     margin: 0;
     padding: 0;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    min-height: 100%;
     box-sizing: border-box !important;
-    background: #202020;
+    // background: #202020;
     overflow: hidden !important;
+}
+.body-container{
+    box-sizing: border-box !important;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 5% 1fr 5%;
+    grid-row-gap: 1em;
+    overflow: hidden !important;
+    background: #202020;
+    height: 100%;
+    // height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 // #particles-js{
 //     width: 100%;
@@ -27,19 +47,22 @@ body{
 // }
 header{
     box-sizing: border-box;
-    position: absolute;
-    top: 0%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    // position: absolute;
+    // top: 0%;
     // height: 20vh;
     font-family: 'Poppins';
     font-weight: bold;
     // color: white;
-    justify-content: space-around;
+    // justify-content: space-around;
     width: 100%;
     z-index: 1;
     .nav-title{
         display: flex;
-        justify-content: space-between;
-        margin: 2em;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1em 0;
         .logo{
             font-size: 6px;
             margin-top: 5px;
@@ -68,14 +91,17 @@ header{
 }
 .social{
     box-sizing: border-box;
-    position: absolute;
-    top: 78%;
-    right: 2%;
-    margin-right: 2em;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    overflow: hidden;
+    // position: absolute;
+    // top: 78%;
+    // right: 2%;
+    // margin-right: 2em;
+    cursor: pointer;
     z-index: 1;
     .social-links{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         a{
@@ -83,12 +109,17 @@ header{
             margin: 0;
             padding: 1px;
             svg{
-                width: 23px;
-                height: 23px;
-                margin:3px; 
+                width: 20px;
+                height: 20px;
+                margin:0 1em; 
             }
         }
     }
+}
+main{
+    box-sizing: border-box;
+    grid-column: 2/3;
+    grid-row: 1/4;
 }
 .page{
     box-sizing: border-box;
