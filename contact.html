@@ -188,11 +188,12 @@
             const tl = new TimelineMax();
 
             tl.fromTo(contact,2,{opacity: 0},{opacity: 1,ease: Sine.easeIn});
-
-
-
         }
 
+        window.onresize = function(){
+          document.body.height = window.innerHeight;
+        }
+        window.onresize();
         init();
     </script>
 </body>
