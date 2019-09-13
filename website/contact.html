@@ -105,6 +105,10 @@
     <script src="./js/anime.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+
+// let vh = window.innerHeight * 0.01;
+// console.log(vh);
+// document.documentElement.style.setProperty('--vh','${vh}px');
 //     function fitElementToParent(el, padding) {
 //   var timeout = null;
 //   function resize() {
@@ -178,10 +182,6 @@
   
 // })();
 
-// let vh = window.innerHeight * 0.01;
-// console.log(vh);
-// document.documentElement.style.setProperty('--vh','${vh}px');
-
         function init(){
             var contact = document.querySelector('main');
 
@@ -189,11 +189,6 @@
 
             tl.fromTo(contact,2,{opacity: 0},{opacity: 1,ease: Sine.easeIn});
         }
-
-        window.onresize = function(){
-          document.body.height = window.innerHeight;
-        }
-        window.onresize();
         init();
     </script>
 </body>

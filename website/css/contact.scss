@@ -17,7 +17,7 @@ body{
     // height: calc(var(--vh, 1vh) * 100);
     // box-sizing: border-box;
     // background: #202020;
-    overflow: hidden !important;
+    // overflow: hidden !important;
     // overflow-y: hidden !important;
     // display: grid;
     // grid-template-columns: 5% 1fr 5%;
@@ -208,7 +208,7 @@ main{
         text-transform: uppercase;
         color: white;
         p{
-            font-size: 1em;
+            font-size: 1rem;
         }
 
     }
