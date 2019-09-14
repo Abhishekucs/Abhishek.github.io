@@ -143,8 +143,8 @@ main {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
-  -ms-grid-rows: 10% 10% 1fr 20%;
-      grid-template-rows: 10% 10% 1fr 20%;
+  -ms-grid-rows: 20% 20% 1fr 20%;
+      grid-template-rows: 20% 20% 1fr 20%;
 }
 
 main .contact-info {
@@ -180,6 +180,15 @@ main .message {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: white;
