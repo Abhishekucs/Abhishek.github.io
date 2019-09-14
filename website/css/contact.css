@@ -139,21 +139,19 @@ main {
   overflow: hidden;
   font-family: 'Montserrat';
   position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 5% 1fr 5%;
-      grid-template-columns: 5% 1fr 5%;
-  -ms-grid-rows: 20% 20% 1fr 20%;
-      grid-template-rows: 20% 20% 1fr 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 main .contact-info {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
   color: white;
   text-transform: uppercase;
   display: -webkit-box;
@@ -174,12 +172,6 @@ main .contact-info h2 {
 }
 
 main .message {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,6 +184,7 @@ main .message {
   text-align: center;
   text-transform: uppercase;
   color: white;
+  margin-top: -20px;
 }
 
 main .message p {
@@ -199,13 +192,6 @@ main .message p {
 }
 
 main form {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -283,12 +269,6 @@ main div.active {
 }
 
 main .touch {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
   overflow: hidden;
   color: red;
   text-align: center;
