@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Abhishek Kumar | Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b60c0b3413.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css"> -->
     <link rel="stylesheet" href="css/contact.css">
 </head>
@@ -50,7 +51,7 @@
         <div class="message">
           <p><span>if you got any question</span><br>please do not hesitate to send me a message</p>
         </div>
-          <div class="form">
+          <!-- <div class="form">
             <section class="name-info">
               <input type="text" name="name" autocomplete="off" required/>
               <label for="name" class="label-name">
@@ -78,7 +79,34 @@
             <section class="submit-btn">
               <button class="btn">SEND MESSAGE</button>
             </section>
-          </div>
+          </div> -->
+          <form action="#">
+            <div class="field-name">
+              <i class="fas fa-user-secret"></i>
+              <input type="text" placeholder="Name" required>
+              <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="field-email inactive">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" required>
+              <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="field-subject inactive">
+              <i class="fas fa-address-book"></i>
+              <input type="text" placeholder="Subject" required>
+              <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="field-message inactive">
+              <i class="fas fa-archive"></i>
+              <input type="text" placeholder="Message" required>
+              <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="field-submit inactive">
+                <i class="fas fa-heart"></i>
+              <p>Your Message is Delievered</p>
+              <i class="fas fa-heart"></i>
+            </div>
+          </form>
           <section class="touch">
               <p class="touch-get">Get in touch with me !</p>
               <svg  class="email-icon" role="img" viewBox="0 0 512 512">
@@ -93,7 +121,6 @@
         <h1>04</h1>
     </footer> -->
     <!-- </div> -->
-
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -106,6 +133,41 @@
     <script src="js/main.js"></script>
     <script>
 
+
+      function animatedForm(){
+        const arrows = document.querySelectorAll('.fa-arrow-down');
+        arrows.forEach((arrow)=>{
+          arrow.addEventListener('click',()=>{
+            const current = arrow.previousElementSibling;
+            const parent = arrow.parentElement;
+            const next = parent.nextElementSibling;
+            // console.log(current);
+            if(current.type === 'text'){
+              nextSlide(parent,next);
+            }else if(current.type === 'email'){
+              nextSlide(parent,next);
+            }else if(current.type === 'text'){
+              nextSlide(parent,next);
+            }else if(current.type === 'text'){
+              nextSlide(parent,next);
+            }else{
+              
+            }
+          });
+        });
+      };
+      
+      function nextSlide(parent,next){
+          parent.classList.add('inactive');
+          parent.classList.remove('active');
+          next.classList.add('active');
+        }
+      function error(color){
+        document.body.style.backgroundColor = 'red';
+      }
+
+
+      animatedForm();
 // let vh = window.innerHeight * 0.01;
 // console.log(vh);
 // document.documentElement.style.setProperty('--vh','${vh}px');
