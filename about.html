@@ -118,6 +118,74 @@
           </p>
         </div>
       </div>
+      <div class="cover1">
+        <i class="fas fa-times"></i>
+        <div class="skill-cover">
+          <div class="block">
+            <div class="block-one">
+              <h1>Photshop</h1>
+              <span class="percentage one1">80%</span>
+            </div>
+            <div class="line one"></div>
+          </div>
+          <div class="block">
+            <div class="block-one">
+              <h1>Lightroom</h1>
+              <span class="percentage two2">75%</span>
+            </div>
+            <div class="line two"></div>
+          </div>
+          <div class="block">
+            <div class="block-one">
+              <h1>AffterEffect</h1>
+              <span class="percentage three3">25%</span>
+            </div>
+            <div class="line three"></div>
+          </div>
+          <div class="block">
+            <div class="block-one">
+              <h1>Photography</h1>
+              <span class="percentage four4">75%</span>
+            </div>
+            <div class="line four"></div>
+          </div>
+          <div class="block">
+            <div class="block-one">
+              <h1>C</h1>
+              <span class="percentage five5">50%</span>
+            </div>
+            <div class="line five"></div>
+          </div>
+          <div class="block">
+            <div class="block-one">
+              <h1>C++</h1>
+              <span class="percentage six6">35%</span>
+            </div>
+            <div class="line six"></div>
+          </div>
+          <div class="block">
+            <div class="block-one">
+              <h1>Java</h1>
+              <span class="percentage seven7">50%</span>
+            </div>
+            <div class="line seven"></div>
+          </div>
+          <div class="block">
+            <div class="block-one">
+              <h1>Javascript</h1>
+              <span class="percentage eight8">80%</span>
+            </div>
+            <div class="line eight"></div>
+          </div>
+          <div class="block">
+            <div class="block-one">
+              <h1>Node.js</h1>
+              <span class="percentage nine9">10%</span>
+            </div>
+            <div class="line nine"></div>
+          </div>
+        </div>
+      </div>
       <!-- <main>
         <section class="page identity">
           <div class="details">
@@ -228,7 +296,8 @@
       const right_revel = document.querySelector(".right-revel");
       const left_revel = document.querySelector(".left-revel");
       const cover = document.querySelector(".cover");
-      const cross = document.querySelector(".fa-times");
+      const cover1 = document.querySelector(".cover1");
+      const cross = document.querySelectorAll(".fas");
       const tlm = new TimelineMax();
 
       tlm
@@ -250,9 +319,15 @@
       right_revel.addEventListener("click", _ => {
         tlm.to(cover, 1.5, { y: "0%", ease: Power2.easeIn });
       });
+      left_revel.addEventListener("click", _ => {
+        tlm.to(cover1, 1.5, { y: "0%", ease: Power2.easeIn });
+      });
 
-      cross.addEventListener("click", _ => {
+      cross[0].addEventListener("click", _ => {
         tlm.to(cover, 1.5, { y: "100%", ease: Power2.easeOut });
+      });
+      cross[1].addEventListener("click", _ => {
+        tlm.to(cover1, 1.5, { y: "100%", ease: Power2.easeOut });
       });
 
       function init() {
