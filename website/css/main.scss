@@ -2,6 +2,8 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 // :root{
 //     height: calc(var(--vh, 1vh) * 100);
@@ -9,16 +11,12 @@
 html {
   margin: 0;
   height: 100%;
-  box-sizing: border-box;
   // height: calc(var(--vh, 1vh) * 100);
 }
 body {
   // box-sizing: border-box !important;
-  width: 100vw;
   min-height: 100%;
   margin: 0;
-  box-sizing: border-box;
-  // overflow: hidden;
   // background: #202020;
   // overflow: hidden !important;
   // display: grid;
@@ -149,7 +147,7 @@ body {
 .animation-wrapper {
   grid-column: 2/3;
   grid-row: 2/3;
-  // width: 80%;
+  // width: 90%;
   padding-bottom: 50%;
 }
 
@@ -178,12 +176,8 @@ header {
   box-sizing: border-box;
   grid-column: 2/3;
   grid-row: 1/2;
-  // position: absolute;
-  // top: 0%;
-  // height: 20vh;
   font-family: "Poppins";
   font-weight: bold;
-  // color: white;
   width: 100%;
   .nav-title {
     display: flex;
@@ -279,8 +273,8 @@ section {
 .footer {
   box-sizing: border-box;
   position: absolute;
-  top: 13%;
-  right: 3%;
+  right: 0;
+  top: 15vh;
   font-family: "Poppins", sans-serif;
   font-weight: lighter;
   font-size: 10px;
@@ -288,10 +282,11 @@ section {
   color: white;
   text-align: end;
   text-transform: uppercase;
+  transform: rotate(90deg);
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(90deg);
   p {
     margin-left: 10px;
     padding: 0;
