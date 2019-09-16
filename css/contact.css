@@ -40,7 +40,7 @@ header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
   width: 100%;
   z-index: 1;
@@ -66,7 +66,7 @@ header .nav-title .logo {
 header .nav-title .logo a {
   text-decoration: none;
   color: white;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
 }
 
@@ -137,7 +137,7 @@ main {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   overflow: hidden;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,7 +228,7 @@ main .field-message p,
 main .field-subject p,
 main .field-email p,
 main .field-submit p {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 main .field-name i,
@@ -251,7 +251,7 @@ main .field-submit input {
           flex: 1;
   outline: none;
   border: none;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 main div.inactive {
@@ -280,7 +280,7 @@ main .touch .touch-get {
   font-size: 1.3em;
   margin-bottom: 5px;
   font-weight: lighter;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 main .touch svg {
@@ -299,7 +299,7 @@ main .touch .touch-email {
   font-size: 15px;
   font-weight: lighter;
   margin-top: 5px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 footer {
@@ -310,7 +310,7 @@ footer {
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   width: 25%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
 }
 
