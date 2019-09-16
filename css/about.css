@@ -152,159 +152,93 @@ header .nav-title nav ul a {
   margin: 0 1em;
 }
 
-main {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.first-interaction {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.first-interaction .identity-interaction {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.first-interaction .identity-interaction h1::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  right: 0%;
+  background-color: #e5c720;
+  width: 500px;
+  height: 5px;
+}
+
+.first-interaction .skill-interaction {
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.first-interaction .skill-interaction h1::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 0;
+  background-color: #e5c720;
+  width: 500px;
+  height: 5px;
+}
+
+.cover {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
-}
-
-.page {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 100%;
   height: 100%;
-  color: white;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  font-family: "Montserrat";
-  font-weight: bold;
+  background-color: #e5c720;
+  z-index: 1;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
-.page .details {
+.cover i {
   position: absolute;
-  top: 50%;
+  top: 3%;
+  left: 5%;
+  cursor: crosshair;
+}
+
+.cover .identity-cover {
+  position: absolute;
   left: 50%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px;
-}
-
-.page .details h1 {
-  font-size: 4.5em;
-}
-
-.page .details p {
-  margin-left: 10px;
-  margin-top: 2.3em;
-  font-weight: normal;
-}
-
-.pages {
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.pages > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 20px;
-}
-
-.pages svg {
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-}
-
-.pages svg:hover {
-  -webkit-animation: dot 0.5s ease-in-out infinite alternate;
-          animation: dot 0.5s ease-in-out infinite alternate;
-}
-
-.pages svg.active {
-  opacity: 1;
-}
-
-.info .details {
-  width: 70%;
-  font-weight: normal;
-}
-
-.info,
-.skill {
-  opacity: 0;
-  pointer-events: none;
-}
-
-@-webkit-keyframes dot {
-  0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  100% {
-    -webkit-transform: scale(4);
-            transform: scale(4);
-  }
-}
-
-@keyframes dot {
-  0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-  100% {
-    -webkit-transform: scale(4);
-            transform: scale(4);
-  }
-}
-
-footer {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  top: 85.5%;
-  margin-left: 2em;
-  font-family: "Poppins";
+  width: 100%;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
-}
-
-footer h1 {
-  font-size: 4.5em;
-  color: red;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  font-size: 1.5em;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
