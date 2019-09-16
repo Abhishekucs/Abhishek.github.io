@@ -303,18 +303,6 @@ section {
     margin: 0;
     padding: 0;
   }
-  animation: up-down 3s ease-in-out 1.5s infinite alternate;
-}
-@keyframes up-down {
-  0% {
-    transform: rotate(90deg), translateX(0);
-  }
-  50% {
-    transform: rotate(90deg), translateX(-50px);
-  }
-  100% {
-    transform: rotate(90deg), translateX(0);
-  }
 }
 @keyframes fadeIn {
   from {
