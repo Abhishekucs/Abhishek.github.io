@@ -285,6 +285,7 @@ header .nav-title {
       -ms-flex-align: center;
           align-items: center;
   margin: 1em;
+  padding: 1em 0 0 0;
 }
 
 header .nav-title .logo {
