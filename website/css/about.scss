@@ -169,6 +169,166 @@ header {
     text-align: center;
   }
 }
+.cover1 {
+  box-sizing: border-box;
+  grid-column: 1/4;
+  grid-row: 1/4;
+  width: 100%;
+  height: 100%;
+  background-color: #e5c720;
+  z-index: 1;
+  transform: translateY(100%);
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 10% 1fr 5%;
+  position: relative;
+  i {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: crosshair;
+  }
+  .skill-cover {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: left;
+    line-height: 3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    .block {
+      width: 100%;
+      .block-one {
+        color: #0a0a0a;
+        display: flex;
+        justify-content: space-between;
+      }
+      .line {
+        width: 90%;
+        height: 8px;
+        border-radius: 2px;
+        background-color: #8d8c8c;
+        position: relative;
+      }
+      .one::after {
+        content: "";
+        width: 80%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+        animation: width-one 1s ease-in forwards;
+      }
+      .two::after {
+        content: "";
+        width: 75%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+        animation: width-two 1s ease-in forwards;
+      }
+      .three::after {
+        content: "";
+        width: 25%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+        animation: width-three 1s ease-in forwards;
+      }
+      .four::after {
+        content: "";
+        width: 75%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+        animation: width-four 1s ease-in forwards;
+      }
+      .five::after {
+        content: "";
+        width: 50%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+        animation: width-five 1s ease-in forwards;
+      }
+      .six::after {
+        content: "";
+        width: 35%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+        animation: width-six 1s ease-in forwards;
+      }
+      .seven::after {
+        content: "";
+        width: 50%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+        animation: width-seven 1s ease-in forwards;
+      }
+      .eight::after {
+        content: "";
+        width: 80%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+        animation: width-eight 1s ease-in forwards;
+      }
+      .nine::after {
+        content: "";
+        width: 10%;
+        height: 8px;
+        background-color: #0a0a0a;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
 // main {
 //   box-sizing: border-box;
 //   grid-column: 2/3;
