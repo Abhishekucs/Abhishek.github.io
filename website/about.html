@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Poppins&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/b60c0b3413.js"></script>
     <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
@@ -99,7 +100,25 @@
           ></a>
         </div>
       </div>
-      <main>
+      <div class="first-interaction">
+        <div class="identity-interaction">
+          <h1 class="right-revel">identity</h1>
+        </div>
+        <div class="skill-interaction">
+          <h1 class="left-revel">skills</h1>
+        </div>
+      </div>
+      <div class="cover">
+        <i class="fas fa-times"></i>
+        <div class="identity-cover">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati,
+            saepe accusamus repellat soluta tenetur quam asperiores et nisi eos
+            placeat!
+          </p>
+        </div>
+      </div>
+      <!-- <main>
         <section class="page identity">
           <div class="details">
             <h1>identity</h1>
@@ -108,12 +127,13 @@
         </section>
         <section class="page info">
           <div class="details">
-            <p></p>
             <div class="ten">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-              obcaecati debitis. At placeat similique assumenda, suscipit ex,
-              dolorem nihil, rerum asperiores tenetur nulla enim modi
-              exercitationem ut libero consectetur ducimus.
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                obcaecati debitis. At placeat similique assumenda, suscipit ex,
+                dolorem nihil, rerum asperiores tenetur nulla enim modi
+                exercitationem ut libero consectetur ducimus.
+              </p>
             </div>
           </div>
         </section>
@@ -125,12 +145,13 @@
         </section>
         <section class="page info">
           <div class="details">
-            <p></p>
             <div class="ten">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-              obcaecati debitis. At placeat similique assumenda, suscipit ex,
-              dolorem nihil, rerum asperiores tenetur nulla enim modi
-              exercitationem ut libero consectetur ducimus.
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                obcaecati debitis. At placeat similique assumenda, suscipit ex,
+                dolorem nihil, rerum asperiores tenetur nulla enim modi
+                exercitationem ut libero consectetur ducimus.
+              </p>
             </div>
           </div>
         </section>
@@ -184,7 +205,7 @@
             </svg>
           </div>
         </div>
-      </main>
+      </main> -->
     </div>
 
     <script
@@ -204,6 +225,36 @@
     <script src="js/main.js"></script>
 
     <script>
+      const right_revel = document.querySelector(".right-revel");
+      const left_revel = document.querySelector(".left-revel");
+      const cover = document.querySelector(".cover");
+      const cross = document.querySelector(".fa-times");
+      const tlm = new TimelineMax();
+
+      tlm
+        .fromTo(
+          right_revel,
+          1,
+          { x: "100%" },
+          { x: "0%", ease: Power2.easeIn },
+          "come"
+        )
+        .fromTo(
+          left_revel,
+          1,
+          { x: "-100%" },
+          { x: "0%", ease: Power2.easeIn },
+          "come"
+        );
+
+      right_revel.addEventListener("click", _ => {
+        tlm.to(cover, 1.5, { y: "0%", ease: Power2.easeIn });
+      });
+
+      cross.addEventListener("click", _ => {
+        tlm.to(cover, 1.5, { y: "100%", ease: Power2.easeOut });
+      });
+
       function init() {
         const slides = document.querySelectorAll(".slide");
         const pages = document.querySelectorAll(".page");
